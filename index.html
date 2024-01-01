@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7ba32e7f35.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="logo.png" class="logo" alt="" /> -->
+                <h1><span>Y</span>atin</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm Yatin Chhabra <br>
+                    A Web Developer in training.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about    -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpg" alt="" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <h4>
+                        I am 22 year old, B-Tech(Computer Science Engineering ) student at
+                        JC Bose university, YMCA Faridabad. I really enjoy solving
+                        problems as well as making things pretty and easy to use. I can't
+                        stop learning new things; the more, the better..
+                    </h4>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('Internship')">
+                            Internship
+                        </p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C</span><br /></li>
+                            <li><span>C++ </span><br /></li>
+                            <li><span>HTML</span><br /></li>
+                            <li><span>CSS</span><br /></li>
+                            <li><span>JAVASCRIPT</span><br /></li>
+                            <li><span>REACTJS</span><br /></li>
+                            <li><span>NODEJS</span><br /></li>
+                            <li><span>MYSQL</span><br /></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Internship">
+                        <ul>
+                            <li>
+                                <span>2023 Jan - 2023 July</span><br />Frontend Development
+                                Training at Wavelinx Technologies Pvt Ltd
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2017</span><br />10th(HOLY CHILD PUBLIC SCHOOL REWARI)</li>
+
+                            <li><span>2019</span><br />12th(HOLY CHILD PUBLIC SCHOOL REWARI)</li>
+
+                            <li>
+                                <span>2019-2023</span><br />Btech (Computer Engineering) From
+                                YMCA Faridabad
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My SKills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>
+                        The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                    <p>
+                        Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                    <p>
+                        JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>ReactJs</h2>
+                    <p>
+                        React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.React can be used to develop single-page, mobile, or server-rendered applications
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MYSQL</h2>
+                    <p>
+                        MySQL, the most popular Open Source SQL database management system, is developed, distributed, and supported by Oracle Corporation.The MySQL website (http://www.mysql.com/) provides the latest information about MySQL software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio  -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h1> News web App using HTML, CSS, JAVASCRIPT, REACTJS</h1>
+                    <img src="work-1.png" alt="" />
+                    <div class="layer">
+                        <h3> News web App</h3>
+                        <p>
+                            It is a user-friendly News Web Application leveraging the latest front-end technologies like HTML,CSS,JS,REACTJS, NPM WEB API,ETC to provide
+                            an immersive and engaging news consumption experience. The project aimed to deliver up-to-date news articles from various reliable sources in a
+                            responsive manner.
+
+                        </p>
+                        <a href="  https://github.com/Yatinchhabra883/news-web-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <h1>E-commerce Website using HTML,CSS JAVASCRIPT</h1>
+                    <img src="work-2.png" alt="" />
+                    <div class="layer">
+                        <h3> E-commerce website</h3>
+                        <p>
+                            A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location.Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
+ 
+
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <h1>GINUX(voice Assistant) using Python</h1>
+                    <img src="work-3.png" alt="" />
+                    <div class="layer">
+                        <h3>GINUX(voice Assistant)</h3>
+                        <p>
+                            It's an voice assistant for desktop interface using python which will work on user voice command which can handle activities like open any apps, sending WhatsApp messages, e-mails ,etc
+                        </p>
+                        <a href="https://github.com/Yatinchhabra883/Ginux-voice-assistant-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- contact  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <br>
+                    <p<i class="fa-solid fa-paper-plane"></i>chhabrayatin881@gmail.com</p>
+                 
+                    <p<i class="fa-solid fa-phone"></i>8950269437, 8950269446</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/yatin9819/"><i class="fa-brands fa-square-instagram"></i></a>
+
+                            <a href="https://www.linkedin.com/in/yatin-chhabra-22a392221/"><i class="fa-brands fa-linkedin"></i></a>
+
+                            <a href="https://github.com/Yatinchhabra883"><i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                        <a href="Yatin_resume.pdf" download class="btn btn2">Download Cv</a>
+
+                </div>
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+
+                        <input type="email" name="Email" placeholder="your email " required>
+
+                        <textarea name="Message" rows="10" placeholder="your meesage" required></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright@ Yatin <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-230px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_U3PrpJ0G__qbNwF-FFcgVbk12VjXPZabYSq_r7MPqDKFCTS58VHFErckdij03PpMAg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{msg.innerHTML="Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=" "
+        },5000)
+        form.reset()
+    
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
